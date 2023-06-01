@@ -1,0 +1,141 @@
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serifs;
+    background: #cbd8e3d4;
+
+}
+
+
+.signup {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 70%;
+}
+
+.sec1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.signup-connect {
+    background: linear-gradient(125deg, #554460, #5ef7e8);
+    color: white;
+    height: 100%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+.signup-connect,
+.signup-classic {
+    padding: 30px 30px;
+}
+
+#signup-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 12rem 0px;
+}
+
+#form-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serifs;
+}
+
+.form fieldset {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.form fieldset input {
+    width: 100%;
+    height: 48px;
+    color: #333333;
+    padding: 15px 40px 15px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    align-items: center;
+    display: block;
+    font-size: medium;
+    background: #6f6581;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    border-color: transparent;
+}
+
+.btn:focus {
+    color: white;
+    background: #6f6581;
+}
+
+.btn:hover {
+    color: white;
+    border-color: transparent !important;
+    background: #6729db;
+}
+
+.btn:active {
+    color: white !important;
+    background: #6729db !important;
+}
+
+.alert {
+    --bs-alert-bg: transparent;
+    --bs-alert-padding-x: 1rem;
+    --bs-alert-padding-y: 1rem;
+    --bs-alert-margin-bottom: 1rem;
+    --bs-alert-color: inherit;
+    --bs-alert-border-color: transparent;
+    --bs-alert-border: 1px solid var(--bs-alert-border-color);
+    --bs-alert-border-radius: 0.375rem;
+    position: relative;
+    padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+    margin-bottom: var(--bs-alert-margin-bottom);
+    color: var(--bs-alert-color);
+    background-color: var(--bs-alert-bg);
+    border: var(--bs-alert-border);
+    border-radius: var(--bs-alert-border-radius);
+}
+
+@media screen and (max-width: 767px) {
+    div.signup {
+        padding-bottom: 20px;
+    }
+
+    .signup-classic {
+        padding: 30px 20px;
+    }
+
+    .signup-connect #signup-title {
+        padding: 6rem 0px;
+    }
+
+    #form-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    div.signup {
+        width: 90%;
+        left: 55%;
+    }
+}
